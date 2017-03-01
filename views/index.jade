@@ -1,5 +1,102 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  #search.overlay-search
+    a.close(href='#') &times;
+    |     
+    .popup-search
+      input.search-depan(type='text', name='search', value='', placeholder='search')
+
+  // Header trigger
+  input#head-trigger.head-trigger(type='checkbox', name='name', value='')
+  label(for='head-trigger')
+    i.fa.bounce
+  // Header
+  .header
+    .header-kontainer
+      div
+        img.head-d-logo(src='gambar/d-logo.svg', alt='')
+      |         
+      ul.social
+        li
+          a(href='#')
+            i.fa.fa-facebook
+        |             
+        li
+          a(href='#')
+            i.fa.fa-google-plus
+        |             
+        li
+          a(href='#')
+            i.fa.fa-instagram
+        |             
+        li
+          a(href='#')
+            i.fa.fa-twitter
+        |             
+        li
+          a(href='#search')
+            i.fa.fa-search
+  // Gap
+  .gap
+  // Konten
+  .container
+    hr
+    |     
+    .kolom
+      .satukol
+        p.t-info.big.center
+          | With pleasure I introduce Djati, Small and light web design!
+          br
+          span.t-info.small -Dandi Wiratsangka-
+    |     
+    hr
+    |     
+    .kolom
+      .empatkol.center.s
+        .welcome-img.one
+          i.fa.fa-mobile-phone
+        |             
+        p.t-info.small With Responsive design, for any device!
+      |         
+      .empatkol.center.d
+        .welcome-img.two
+          i.fa.fa-html5
+        |             
+        p.t-info.small Bring the beauty of html5 and css3
+      |         
+      .empatkol.center.t
+        .welcome-img.three
+          i.fa.fa-link
+        |             
+        p.t-info.small Modern UI, make you feel modern
+      |         
+      .empatkol.center.e
+        .welcome-img.four
+          i.fa.fa-tint
+        |             
+        p.t-info.small Come with ton of styles
+  .container.wwd
+    h1.center What we do
+    |     
+    .kolom
+      .tigakol
+        p
+          | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam officiis explicabo laborum officia reiciendis ipsum porro illo nobis tenetur deserunt aspernatur laboriosam, eaque ab. Dolorem atque provident sequi, amet dolor!
+      |         
+      .tigakol
+        p
+          | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam officiis explicabo laborum officia reiciendis ipsum porro illo nobis tenetur deserunt aspernatur laboriosam, eaque ab. Dolorem atque provident sequi, amet dolor!
+      |         
+      .tigakol
+        p
+          | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam officiis explicabo laborum officia reiciendis ipsum porro illo nobis tenetur deserunt aspernatur laboriosam, eaque ab. Dolorem atque provident sequi, amet dolor!
+    |     
+    hr
+    |     
+    .satukol.center
+      h6 want to know more about us?
+      |         
+      form(action='submit', method='post')
+        input.subscribe(type='email', placeholder='E-mail', required='')
+        input.subscribe.button(type='submit', value='Subscribe')      
