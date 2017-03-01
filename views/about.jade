@@ -1,0 +1,91 @@
+extends layout
+
+block content
+  section.about
+    .container
+      h1 About Me
+      |         
+      .profileimg
+        img(src='gambar/me.jpg', alt='Dandi')
+      |         
+      h6 Dandi Wiratsangka Sejati
+      |         
+      p.h-light
+        i.fa.fa-bullhorn
+        |  Hi There! it&apos;s nice to meet you. Many people call me Dandi, what should I call you?
+      |         
+      hr
+      |         
+      .acc-kontainer
+        div
+          // Acc
+          input#acc1(type='radio', name='acc', value='', checked='')
+          |                 
+          label(for='acc1')
+            i.fa.fa-birthday-cake
+            |  When was your Birthday?
+          |                 
+          .acc-body
+            | Based on my birth certificate, I was born in October 12
+            sup th
+            | , 1999.
+        |             
+        div
+          // Acc
+          input#acc2(type='radio', name='acc', value='')
+          |                 
+          label(for='acc2')
+            i.fa.fa-university
+            |  Where do you study?
+          |                 
+          .acc-body
+            | Computer Science, Gadjah Mada University
+        |             
+        div
+          // Acc
+          input#acc3(type='radio', name='acc', value='')
+          |                 
+          label(for='acc3')
+            i.fa.fa-map-marker
+            |  Where do you come from?
+          |                 
+          .acc-body
+            | I am from Pemalang, small town in Central Java.
+        |             
+        div
+          // Acc
+          input#acc4(type='radio', name='acc', value='')
+          |                 
+          label(for='acc4')
+            i.fa.fa-map-marker
+            |  Where do you live?
+          |                 
+          .acc-body
+            | I live in Sendowo,Yogyakarta right now.
+        |             
+        div
+          // Acc
+          input#acc5(type='radio', name='acc', value='')
+          |                 
+          label(for='acc5')
+            i.fa.fa-heart
+            |  What are you interesting for?
+          |                 
+          .acc-body
+            | All the thing about Technology! Informatic technology especially.
+        |             
+        div
+          // Acc
+          input#acc6(type='radio', name='acc', value='')
+          |                 
+          label(for='acc6')
+            i.fa.fa-music
+            |  What is your hobby?
+          |                 
+          .acc-body
+            | i love music 
+            i.fa.fa-headphones
+            | , watching movie 
+            i.fa.fa-film
+            | , Designing maybe 
+            i.fa.fa-code

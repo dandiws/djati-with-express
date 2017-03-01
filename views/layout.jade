@@ -1,0 +1,135 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    |     
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    |     
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    |     
+    title
+    // Css
+    link(rel='stylesheet', href='css/main.css')
+    |     
+    link(rel='stylesheet', href='css/header-home.css')
+    |     
+    link(rel='stylesheet', href='css/navmenu.css')
+    |     
+    link(rel='stylesheet', href='css/font-awesome.min.css')
+    |     
+    link(rel='stylesheet', href='css/footer.css')
+    |     
+    link(rel='stylesheet', href='css/about.css')
+    |     
+    link(rel='stylesheet', href='css/blog.css')
+    |     
+    link(rel='stylesheet', href='css/elements.css')
+    |     
+    link(rel='stylesheet', href='css/kontak.css')
+    |     
+    link(rel='stylesheet', href='css/portfolio.css')
+  body
+    input#nav-trigger.nav-trigger(type='checkbox')
+    |     
+    label(for='nav-trigger')
+      span.fa
+    |     
+    .navmenu
+      .logo
+        .logo-kontainer
+          a(href='#')
+            img.menu-d-logo(src='gambar/d-logo.svg', alt='Logo')
+            |  Djati
+          |                 
+          input.searchq(type='text', name='search', value='', placeholder='search')
+      |         
+      ul
+        a(href='#')
+          li.menuactive
+            i.fa.fa-home
+            |  Home
+        |             
+        a(href='about')
+          li
+            i.fa.fa-user
+            |  About
+        |             
+        a(href='contact')
+          li
+            i.fa.fa-paper-plane
+            |  Contact
+        |             
+        a(href='#')
+          li
+            i.fa.fa-tag
+            |  Portfolio
+        |             
+        a(href='#')
+          li
+            i.fa.fa-pencil
+            |  Blog
+        |             
+        a(href='#')
+          li
+            i.fa.fa-tint
+            |  Styles
+    // SEMUA KONTEN HARUS DIDALAM site-wrapper
+    #top.site-wrapper
+    
+      block content
+      // Footer
+      footer#footer
+        .block-footer
+          .links
+            .kolom-link
+              h2 Information
+              |                         
+              a(href='#') Term of Use
+              |                         
+              a(href='#') Disclaimer
+            |                     
+            .kolom-link
+              h2 Get in touch
+              |                         
+              a(href='#') Blog
+              |                         
+              a(href='#') Contact Me
+            |                     
+            .kolom-link
+              h2 More
+              |                         
+              a(href='#') About me
+              |                         
+              a(href='#') Follow me
+        |             
+        .copyright-kontainer
+          ul.copyright
+            li
+              | &copy; 2016 | Dandi Wiratsangka | All rights reserved | Designed with 
+              i.fa.fa-heart
+              |  by 
+              a(href='about') Dandi
+          |                 
+          ul.icons-footer
+            li
+              a.icon.fa.fa-facebook
+                span.label Facebook
+            |                     
+            li
+              a.icon.fa.fa-google-plus
+                span.label Google+
+            |                     
+            li
+              a.icon.fa.fa-instagram
+                span.label Instagram
+            |                     
+            li
+              a.icon.fa.fa-twitter
+                span.label Twitter
+    |     
+    a.gotop(href='#top')
+      i.fa.fa-chevron-up
+    |     
+    script(src='js/jquery.min.js')
+    |     
+    script(src='js/djati0.js')

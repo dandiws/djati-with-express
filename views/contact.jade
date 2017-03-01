@@ -1,0 +1,41 @@
+extends layout
+
+block content
+  section.kontak-form
+    .container
+      h1 Contact Me
+      |         
+      form.formku(method='post', action='#')
+        .block
+          input#name(type='text', name='name', value='', placeholder='Name', required='required')
+        |             
+        .block
+          input#email(type='email', name='email', value='', placeholder='Email', required='required')
+        |             
+        .block
+          input#subject(type='text', name='subject', value='', placeholder='Subject', required='required')
+        |             
+        .block
+          input#male(type='radio', name='priority', checked='')
+          |                 
+          label(for='male') Male
+          |                 
+          input#female(type='radio', name='priority')
+          |                 
+          label(for='female') Female
+        |             
+        .block
+          textarea#message.myscroll(name='message', placeholder='Enter your message', rows='6', required='')
+        |             
+        .block
+          input#human(type='checkbox', name='human', checked='', required='required')
+          |                 
+          label(for='human') I am a human and not a robot
+        |             
+        .block
+          ul.actions
+            li
+              input.submit(type='submit', value='Send Message')
+            |                     
+            li
+              input.reset(type='reset', value='Reset')
